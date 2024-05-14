@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../img/white_orchid.png);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: contain;
+    background-attachment: fixed;
+    
+    background-color: white;
+}
+
+#title {
+    opacity: 100%;
+    color: black;
+    font-family: "filmotype-yale", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    font-size: 325%;
+    margin-top: 1.8%;
+    z-index: 100;
+    left: 2%;
+    animation-name: glow;
+    animation-delay: 0s;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes glow {
+    0% {
+        color: black;
+        text-shadow: none;
+    }
+    50% {
+        color: white;
+        text-shadow: 1px 1px 3px white;
+    }
+    100% {
+        color: black;
+        text-shadow: none;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #BB4771;
+    opacity: 50%;
+    margin-top: 2%;
+    padding-right: 2%;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 10px 30px;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14pt;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+#cart {
+    position: absolute;
+    height: 2.5vh;
+    top: 5.5%;
+    right: 2%;
+    z-index: 100;
+}
+
+/* BODY */
+#main {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* padding-bottom: 3%; */
+}
+
+h2 {
+    font-family: "linotype-didot-headline", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60pt;
+}
+
+h3 {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 22pt;
+}
+
+#chunk {
+    display: flex;
+    flex-direction: column;
+}
+
+.stack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic {
+    display: flex;
+    width: 40%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+h4 {
+    font-family: "filmotype-yale", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36pt;
+}
+
+li {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14pt;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    text-align: center;
+    justify-content: center;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14pt;
+    text-decoration: none;
+    color: #373B3B;
+    background-color: #C8D174;
+    padding: 1% 2%;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px #373B3B;
+    opacity: 85%;
+
+    border: 5px solid transparent;
+}
+
+.link:hover {
+    border: 5px solid #BB4771; 
+}
+
+/* FOOTER */
+footer {
+    background-color: #BB4771;
+    opacity: 0.5;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+#footer {
+    text-decoration: none;
+    color: white;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center ;
+}

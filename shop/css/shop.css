@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../img/white_orchid.png);
+    background-repeat: no-repeat;
+    /* background-position: center;
+    background-size: cover; */
+    background-size: contain;
+    background-attachment: fixed;
+    
+    background-color: white;
+}
+
+#title {
+    opacity: 100%;
+    color: black;
+    font-family: "filmotype-yale", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    font-size: 325%;
+    margin-top: 1.8%;
+    z-index: 100;
+    left: 2%;
+
+    animation-name: glow;
+    animation-delay: 0s;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes glow {
+    0% {
+        color: black;
+        text-shadow: none;
+    }
+    50% {
+        color: white;
+        text-shadow: 1px 1px 3px white;
+    }
+    100% {
+        color: black;
+        text-shadow: none;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #BB4771;
+    opacity: 50%;
+    margin-top: 2%;
+    padding-right: 2%;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 10px 30px;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14pt;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+#cart {
+    position: absolute;
+    height: 2.5vh;
+    top: 5.5%;
+    right: 2%;
+}
+
+
+/* BODY */
+h1 {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: gray;
+    text-align: right;
+}
+
+h3 {
+    /* font-family: Futura, sans-serif; */
+    font-family: "linotype-didot-headline", serif;
+    font-weight: 400;
+    font-style: normal;
+    /* text-transform: uppercase; */
+    font-size: 2em;
+    font-weight: 100;
+    color: #373B3B;
+}
+
+.info {
+    text-decoration: none;
+}
+
+.info:hover {
+    text-shadow: 2px 2px 5px pink;
+}
+
+.add {
+    /* font-family: Futura, sans-serif; */
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    font-style: normal;
+    color: #373B3B;
+    text-decoration: none;
+    background-color: #C8D174;
+    padding: 2%;
+    margin-top: 5%;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px #373B3B;
+    position: relative;
+    left: 25%;
+    opacity: 85%;
+
+    border: 5px solid transparent;
+}
+
+.add:hover {
+    border: 5px solid #BB4771;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+#yourcart:hover {
+    text-decoration: underline;
+}
+
+#items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3% 3%;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 2%;
+    justify-content: center;
+    text-align: center;
+}
+
+.pic {
+    height: 45vh;
+    width: auto;
+    margin-bottom: 10%;
+}
+
+.overlay {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    top: 19%;
+}
+
+.overlay:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.overlay2 {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    top: 89%;
+}
+
+.overlay2:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+/* FOOTER */
+footer {
+    background-color: #BB4771;
+    opacity: 0.5;
+    margin-top: 2%;
+    padding: 3%;
+}
+
+h4 {
+    text-decoration: none;
+    color: white;
+    /* margin: 10px 30px; */
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+}
