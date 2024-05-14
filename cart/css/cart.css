@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../img/white_orchid.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    background-color: white;
+}
+
+#title {
+    opacity: 100%;
+    color: black;
+    font-family: "filmotype-yale", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    font-size: 325%;
+    margin-top: 1.8%;
+    z-index: 100;
+    left: 2%;
+    animation-name: glow;
+    animation-delay: 0s;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes glow {
+    0% {
+        color: black;
+        text-shadow: none;
+    }
+    50% {
+        color: white;
+        text-shadow: 1px 1px 3px white;
+    }
+    100% {
+        color: black;
+        text-shadow: none;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #BB4771;
+    opacity: 50%;
+    margin-top: 2%;
+    padding-right: 2%;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 10px 30px;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14pt;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+#cart {
+    position: absolute;
+    height: 2.5vh;
+    top: 5%;
+    right: 2%;
+}
+
+/* BODY */
+#text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 17% 0%;
+}
+
+h2 {
+    font-family: "filmotype-yale", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 72pt;
+}
+
+h3 {
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 24pt;
+    color: #373B3B;
+    background-color: #C8D174;
+    padding: 1%;
+    margin: 2% 40% 0%;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px #373B3B;
+    opacity: 85%;
+
+    border: 5px solid transparent;
+}
+
+h3:hover {
+    border: 5px solid #BB4771;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background-color: #BB4771;
+    opacity: 0.5;
+    margin-top: 2%;
+    padding: 3%;
+}
+
+h4 {
+    text-decoration: none;
+    color: white;
+    font-family: proxima-nova-condensed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+}
