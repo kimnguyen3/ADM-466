@@ -85,7 +85,7 @@ nav a:hover{
 
 /* BODY */
 #faq {
-    margin: 2% 20%;
+    margin: 3% 20% 3% 23%;
 }
 
 h2 {
@@ -111,6 +111,89 @@ p {
     font-weight: 200;
     font-style: normal;
     font-size: 14pt;
+    text-align: justify;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.chunk {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 5vh;
+    opacity: 0.5;
+    position: relative;
+    left: -5%;
+    /* animation-name: icons;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; */
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+@keyframes icons {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.link {
+    position: relative;
+    left: 5%;
+    text-decoration: none;
+    font-family: "filmotype-yale", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24pt;
+    color: black;
+    animation-name: type;
+    animation-delay: 0s;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes type {
+    0% {
+        color: black;
+        text-shadow: none;
+    }
+    50% {
+        /* color: white; */
+        opacity: 0.25;
+        text-shadow: 1px 1px 6px #BB4771;
+    }
+    100% {
+        color: black;
+        text-shadow: none;
+    }
+}
+
+.link:hover {
+    /* animation-play-state: paused; */
+    animation-name: type;
+    animation-delay: 0s;
+    animation-duration: 0s;
+    animation-fill-mode: none;
 }
 
 /* FOOTER */
