@@ -114,7 +114,6 @@ h3 {
 }
 
 .add {
-    /* font-family: Futura, sans-serif; */
     font-family: proxima-nova-condensed, sans-serif;
     font-weight: 400;
     font-size: 1.2em;
@@ -136,6 +135,13 @@ h3 {
 
 .add:hover {
     border: 5px solid #BB4771;
+}
+
+p {
+    font-family: "filmotype-yale", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24pt;
 }
 
 #main {
@@ -176,7 +182,7 @@ h3 {
     justify-content: center;
     flex-direction: column;
     width: 25%;
-    top: 19%;
+    top: 19.5%;
 }
 
 .overlay:hover {
@@ -191,12 +197,12 @@ h3 {
     justify-content: center;
     flex-direction: column;
     width: 25%;
-    top: 89%;
+    top: 94%;
 }
 
 .overlay2:hover {
     opacity: 1;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 /* FOOTER */
@@ -210,7 +216,6 @@ footer {
 h4 {
     text-decoration: none;
     color: white;
-    /* margin: 10px 30px; */
     font-family: proxima-nova-condensed, sans-serif;
     font-weight: 200;
     font-style: normal;
