@@ -79,23 +79,38 @@ nav a:hover{
 #cart {
     position: absolute;
     height: 2.5vh;
-    top: 5%;
+    top: 5.5%;
     right: 2%;
 }
 
-h1 {
+/* BODY */
+#back {
+    text-decoration: none;
     font-family: proxima-nova-condensed, sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
-    color: gray;
-    text-align: right;
+    font-size: 14pt;
+    color: #373B3B;
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    z-index: 99;
 }
 
-/* BODY */
+#back:hover {
+    transform: skew(-30deg);
+}
+
+#goback {
+    width: 17%;
+    position: absolute;
+    top: 5%;
+}
+
 #main {
     display: flex;
     flex-direction: row;
-    margin: 3% 10% 8%;
+    margin: 5% 10% 8%;
 }
 
 #photos {
